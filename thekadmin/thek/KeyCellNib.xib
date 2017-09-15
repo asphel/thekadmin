@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="keyCell" rowHeight="100" id="uDu-m6-PNC" customClass="KeyCell" customModule="thek" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uDu-m6-PNC" id="VQY-4M-8DK">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uR2-5z-372">
+                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="KFF-Hc-6Qc"/>
+                            <constraint firstAttribute="width" constant="80" id="QR9-ib-FDr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E4-dX-oiB">
+                        <rect key="frame" x="98" y="10" width="269" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6E4-dX-oiB" firstAttribute="top" secondItem="VQY-4M-8DK" secondAttribute="top" constant="10" id="2Zf-4B-AKn"/>
+                    <constraint firstItem="uR2-5z-372" firstAttribute="leading" secondItem="VQY-4M-8DK" secondAttribute="leading" constant="10" id="4qM-CH-esP"/>
+                    <constraint firstItem="uR2-5z-372" firstAttribute="top" secondItem="VQY-4M-8DK" secondAttribute="top" constant="10" id="B01-oc-jKv"/>
+                    <constraint firstItem="6E4-dX-oiB" firstAttribute="leading" secondItem="uR2-5z-372" secondAttribute="trailing" constant="8" id="P5H-Z7-Pz3"/>
+                    <constraint firstAttribute="trailing" secondItem="6E4-dX-oiB" secondAttribute="trailing" constant="8" id="ipf-o4-zRc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="0.50707755730000004" blue="0.28072710070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="title" destination="6E4-dX-oiB" id="tWB-kr-CcV"/>
+            </connections>
+            <point key="canvasLocation" x="4.5" y="257"/>
+        </tableViewCell>
+    </objects>
+</document>
